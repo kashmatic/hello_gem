@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "hello_gem"
   gem.homepage = "http://github.com/kashmatic/hello_gem"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "one-line summary of your gem"
+  gem.description = "longer description of your gem"
   gem.email = "Kashi.Revanna@unt.edu"
   gem.authors = ["Kashi Revanna"]
   # dependencies defined in Gemfile
@@ -37,13 +37,3 @@ RSpec::Core::RakeTask.new(:rcov) do |spec|
 end
 
 task :default => :spec
-
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "hello_gem #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
