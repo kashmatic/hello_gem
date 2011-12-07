@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/kashmatic/hello_gem"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.12"
   s.summary = "one-line summary of your gem"
 
   if s.respond_to? :specification_version then
